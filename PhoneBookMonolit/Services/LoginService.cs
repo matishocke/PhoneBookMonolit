@@ -14,7 +14,7 @@ namespace PhoneBookMonolit.Services
             var request = new RestRequest("api/Login?username=admin&password=pass", Method.Post);
             RestResponse response = client.Execute(request);
             Console.WriteLine(response.Content);
-
+            var you = "you";
             return true;
         }
     }
